@@ -1,0 +1,14 @@
+.home2__container{
+    margin-top: 20rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.home2__image{
+    width: 700px;
+    aspect-ratio: 3/4;
+    /* margin-left: 25rem; */
+    /* transform: rotate(-15deg); */
+    /* z-index: 1; */
+    /* position: absolute; */
+
+}

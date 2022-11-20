@@ -1,0 +1,48 @@
+.navbar__container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.75rem;
+    justify-content: space-between;
+}
+
+.navbar__1{
+    display: flex;
+    flex-direction: row;
+}
+.navbar__logo{
+    height: 70px;
+    aspect-ratio: 1/1;
+}
+.navbar__ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.navbar__li{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 5px;
+    
+}
+
+.make__own{
+    font-weight: bold;
+    margin: 0 0 0 5px;
+    font-size: 16px;
+    border-radius: 5rem;
+    padding: 15px 23.5px 15px 25.5px;
+    cursor: pointer;
+}
+
+.login__navbar{
+    color: black;
+    text-decoration: none;
+    transition: all 0.4s ease;
+
+}
+.login__navbar:hover{
+    font-weight: bold;
+}

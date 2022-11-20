@@ -1,0 +1,47 @@
+.home__container{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+}
+
+.home__info{
+    margin: 10rem 0 0 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.why{
+    font-size: 20px;
+    border: 1px solid black;
+    /* padding-right: 2px; */
+    background: white;
+    color: black;
+    border-radius: 0;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.home__man__image{
+    width: 700px;
+    aspect-ratio: 3/4;
+    transform: rotate(3deg);
+    border: 2px solid black;
+    z-index: 2;
+    position: absolute;
+}
+
+/* .first__image{
+    margin-top: -10rem;
+}
+.home2__image{
+    width: 700px;
+    aspect-ratio: 3/4;
+    margin-left: 25rem;
+    transform: rotate(-15deg);
+    z-index: -1;
+    position: absolute;
+
+} */
