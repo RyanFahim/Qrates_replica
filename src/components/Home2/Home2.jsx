@@ -6,17 +6,22 @@ import sticker from '../../assets/sticker.svg'
 const Home2 = () => {
   return (
     <>
-    <div className="container home2__container">
+      <div className="container home2__container">
         <div className="first__image">
-            <img src= {home2image} alt="" className="home2__image"/>
-       
+          <img src={home2image} alt="" className="home2__image" />
+
+        </div>
 
         <div className="home2__sticker">
-            <img src= {sticker} alt="" />
+          
+          <img src={sticker} alt="no _img" />
         </div>
-    </div>
-    </div>
-    
+        
+
+      </div>
+      <hr className="home2__hr"/>
+
+
     </>
   )
 }

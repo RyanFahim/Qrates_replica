@@ -1,14 +1,25 @@
 .home2__container{
-    margin-top: 20rem;
+    /* margin-top: 20rem; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 .home2__image{
     width: 700px;
+    height: 800px;
     aspect-ratio: 3/4;
-    /* margin-left: 25rem; */
-    /* transform: rotate(-15deg); */
-    /* z-index: 1; */
+     margin-left: 8rem; 
+    transform: rotate(-3deg);
+    z-index: 1;
+    margin-top: 5rem;
+    border: 3px solid rgb(0, 0, 0);
     /* position: absolute; */
 
+}
+.home2__sticker{
+    margin: 22rem 0 0 5rem;
+}
+
+.home2__hr{
+    border-width: 2px;
+    color: black;
 }
