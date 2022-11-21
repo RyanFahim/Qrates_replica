@@ -1,5 +1,5 @@
 .home__container{
-    margin-top: 5rem;
+    margin-top: 0rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2px;
@@ -25,23 +25,13 @@
 }
 
 .home__man__image{
-    width: 700px;
-    aspect-ratio: 3/4;
-    transform: rotate(3deg);
+    width: 550px;
+    height: 700px;
+    transform: rotate(5deg);
     border: 2px solid black;
     z-index: 2;
     position: absolute;
+    margin: 5rem 0 0 2rem;
+    vertical-align: top;
 }
 
-/* .first__image{
-    margin-top: -10rem;
-}
-.home2__image{
-    width: 700px;
-    aspect-ratio: 3/4;
-    margin-left: 25rem;
-    transform: rotate(-15deg);
-    z-index: -1;
-    position: absolute;
-
-} */

@@ -21,19 +21,9 @@ const Home = () => {
             <img src= {manImage} alt="" className="home__man__image"/>
         </div>
     </div>
-
-    {/* second part */}
-    {/* <div className="container home2__container">
-        <div className="first__image">
-            <img src= {home2image} alt="" className="home2__image"/>
-        </div>
-
-        <div className="home2__sticker">
-            <img src= {sticker} alt="" />
-        </div>
-    </div>
-     */}
     
+
+  
     </>
   )
 }
