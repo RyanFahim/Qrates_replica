@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import './reuse.css'
 import image from '../../assets/cd.png'
-import './Contextuse'
+
 
 const Reuse = (props) => {
     console.log(props.l__color);

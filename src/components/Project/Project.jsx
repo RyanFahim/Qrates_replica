@@ -3,7 +3,7 @@ import './project.css'
 import l_img from '../../assets/cd.png'
 import r_img from '../../assets/radio_run.png'
 import Reuse from '../Reuse/Reuse'
-import ReuseContext from '../Reuse/Contextuse'
+// import ReuseContext from '../Reuse/Contextuse'
 
 const Project = () => {
     const data = {
@@ -18,7 +18,7 @@ const Project = () => {
         'r_header_para' : 'Cassette',
         "r__img": r_img,
         'r__info': 'Cassettes have always been special to music fans and artists. Whether you are saving a recording of a great concert, or preserving an early demo, there’s no better way to keep that music close than on cassette tapes.',
-        'r__button': 'Make your own Cassette',
+        'r__button': 'Make your Cassette',
         'r__color': "#81836C",
 
     }
