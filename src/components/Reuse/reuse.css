@@ -2,7 +2,7 @@
 .reuse__container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: fit-content;
+    /* width: fit-content; */
     
 }
 
@@ -11,19 +11,21 @@
     /* background-color: #497775; */
     justify-content: center;
     align-items: center;
-    margin: auto;
+    /* margin: auto; */
     padding: 2rem 2rem;
+    border: 1px solid black;
 }
 
 .reuse__right__img,
 .reuse__left__img{
-    height: 200px;
-    aspect-ratio: 1/1;
+    height: 15vmax;
+    aspect-ratio: 4/3;
+    
     justify-content: center;
     align-items: center;
     margin: auto;
     width: 100%;
-    padding: 1rem 10rem 1rem 10rem;
+    padding: 2rem 10rem 2rem 10rem;
     /* margin: 0 5px 0 auto; */
 }
 
@@ -61,9 +63,17 @@
     max-height: 110px;
 }
 
+.button__style-reuse{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 .reuse__right__button,
 .reuse__left__button{
-    margin: 0 14rem;
+    
+    /* margin: 0 14rem; */
     /* width: 100%; */
     /* max-width: 200px; */
 }

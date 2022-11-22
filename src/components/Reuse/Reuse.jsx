@@ -17,7 +17,10 @@ const Reuse = (props) => {
                        {props.l__info}
                     </p>
                     <img src= {props.l__img} alt="" className="reuse__left__img" />
+                    <div className="button__style-reuse">
+
                     <button className="reuse__left__button">{props.l__button}</button>
+                    </div>
                 </div>
 
                 <div className="reuse__right" style={{backgroundColor: props.r__color}}>
@@ -27,7 +30,10 @@ const Reuse = (props) => {
                      {props.r__info}
                     </p>
                     <img src= {props.r__img} alt="" className="reuse__right__img" />
+                    <div className="button__style-reuse">
+
                     <button className="reuse__right__button">{props.r__button}</button>
+                    </div>
                 </div>
             </div>
         </>
