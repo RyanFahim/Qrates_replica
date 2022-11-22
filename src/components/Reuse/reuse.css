@@ -2,6 +2,7 @@
 .reuse__container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
     
 }
 
@@ -20,7 +21,10 @@
     aspect-ratio: 1/1;
     justify-content: center;
     align-items: center;
-    margin: 2rem 15rem;
+    margin: auto;
+    width: 100%;
+    padding: 1rem 10rem 1rem 10rem;
+    /* margin: 0 5px 0 auto; */
 }
 
 
@@ -60,5 +64,6 @@
 .reuse__right__button,
 .reuse__left__button{
     margin: 0 14rem;
+    /* width: 100%; */
     /* max-width: 200px; */
 }

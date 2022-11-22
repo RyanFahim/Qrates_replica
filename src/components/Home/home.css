@@ -1,8 +1,16 @@
 .home__container{
     margin-top: 0rem;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    /* gap: 2px; */
+    height: max-content;
+    /* width: 80%; */
+}
+
+.main__container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2px;
+    overflow-x: hidden;
 }
 
 .home__info{
@@ -10,12 +18,13 @@
     align-items: center;
     justify-content: center;
     font-size: 30px;
+    padding-bottom: 20rem;
 }
 
 .why{
     font-size: 20px;
     border: 1px solid black;
-    /* padding-right: 2px; */
+   
     background: white;
     color: black;
     border-radius: 0;
@@ -24,7 +33,7 @@
     cursor: pointer;
 }
 
-.home__man__image{
+/* .home__man__image{
     width: 550px;
     height: 700px;
     transform: rotate(5deg);
@@ -33,5 +42,92 @@
     position: absolute;
     margin: 5rem 0 0 2rem;
     vertical-align: top;
+} */
+
+
+/* Home2  */
+/* 
+.home2__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.home2__image{
+    width: 700px;
+    height: 800px;
+    aspect-ratio: 3/4;
+     margin-left: 8rem; 
+    transform: rotate(-3deg);
+    z-index: 1;
+    margin-top: 5rem;
+    border: 3px solid rgb(0, 0, 0);
+
+
+}
+.home2__sticker{
+    margin: 22rem 0 0 5rem;
+} */
+
+.home2__hr{
+    border-width: 2px;
+    color: black;
 }
 
+
+
+
+/* new */
+
+.image__container{
+    /* aspect-ratio: 7/5; */
+    /* width: 15rem; */
+
+    margin-left: 200px;
+}
+
+.manImage, .home2image, .sticker{
+    
+    position: absolute;
+}
+
+.manImage{
+    width: 35rem;
+    margin-top: 10%;
+    transform:translate(-35%) rotate(4deg);
+    z-index: 2;
+    border: 1px solid black;
+    aspect-ratio: 6/7;
+}
+
+.home2image{
+    width: 30rem;
+    transform: translate(-70%, 70%) rotate(-5deg);
+    z-index: 1;
+    border: 1px solid black;
+}
+.sticker{
+    width: 10rem;
+    transform: translate(70%, 300%);
+}
+
+
+/* BREAKPOINTS */
+
+/* For large devices */
+@media screen and (max-width:992px) {
+
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width:768px) {
+    
+  }
+  
+  @media screen and (max-width:576px) {
+    
+  }
+  
+  
+  /* For small devices */
+  @media screen and (max-width:350px) {
+    
+  }

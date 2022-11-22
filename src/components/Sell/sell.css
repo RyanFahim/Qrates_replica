@@ -1,0 +1,14 @@
+.sell__section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    padding: 3rem 6rem;
+    background: #000;
+    color: #fff;
+}
+
+.sell__a{
+    color: white;
+    padding-left: 8rem;
+    
+}
