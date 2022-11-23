@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Home2 from './components/Home2/Home2';
 import NavBar from './components/NavBar/NavBar';
@@ -13,11 +14,12 @@ function App() {
       
 
         <NavBar />
-        {/* <Home /> */}
+        <Home />
         {/* <Home2 /> */}
-        {/* <Project/> */}
-        {/* <Sell/> */}
+        <Project/>
+        <Sell/>
         <Services/>
+        <Footer/>
      
     </>
   )
