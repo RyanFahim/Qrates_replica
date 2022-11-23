@@ -7,6 +7,8 @@ const NavBar = () => {
     <>
     <div className="container navbar__container">
 
+    <div className="navBar__all-menu">
+
         <div className="navbar__1">
             <img src={logo} alt="" className='navbar__logo'/>
             
@@ -22,6 +24,12 @@ const NavBar = () => {
         <div className="navbar__2">
             <a href="#" className="login__navbar">Login</a>
             <button className="make__own">Make your Own</button>
+            <i className="uil uil-x nav__cross"></i>
+        </div>
+    </div>
+
+        <div className="nav__toggle">
+        <i class="uil uil-apps"></i>
         </div>
 
     </div>
