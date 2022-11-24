@@ -16,10 +16,10 @@ function App() {
         <NavBar />
         <Home />
         {/* <Home2 /> */}
-        <Project/>
-        <Sell/>
-        <Services/>
-        <Footer/>
+        {/* <Project/> */}
+        {/* <Sell/> */}
+        {/* <Services/> */}
+        {/* <Footer/> */}
      
     </>
   )

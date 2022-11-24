@@ -96,6 +96,7 @@
     z-index: 2;
     border: 1px solid black;
     aspect-ratio: 6/7;
+    z-index: -2;
 }
 
 .home2image{
