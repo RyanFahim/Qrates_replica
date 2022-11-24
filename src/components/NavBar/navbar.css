@@ -1,86 +1,191 @@
-.navbar__container{
-    
-    display: flex;
-    flex-direction: row;
-    margin-top: 0.75rem;
-    justify-content: space-between;
-    padding: 0 2rem;
+.main-nav{
+    width: 100%;
+    height: 10rem;
+    display: grid;
+    grid-template-columns:0.5rem 0.5fr 2fr 1fr 5rem;
 }
 
-.navbar__1{
+.main-logo{
+    display: grid;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.menu-link{
+    grid-column: 3/4;
+    
+}
+.menu-link-ul{
+    height: 10rem;
     display: flex;
-    flex-direction: row;
-    /* gap: 2rem; */
-}
-.navbar__logo{
-    height: 70px;
-    aspect-ratio: 1/1;
-}
-.navbar__ul{
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-}
-
-.navbar__li{
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin: 0 5px;
     
+    padding-top: 1rem;
 }
 
-.make__own{
-    font-weight: bold;
-    margin: 0 0 0 5px;
+.menu-link-ul-li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* margin-left: -35px; */
+
+}
+
+.menu-link-ul-li-a{
     font-size: 16px;
-    border-radius: 5rem;
-    padding: 15px 23.5px 15px 25.5px;
+}
+
+.menu-third{
+    grid-column: 4/5;
+    text-align: end;
+    justify-content: end;
+}
+.menu-third-ul{
+    height: 10rem;
+    display: grid;
+    grid-template-columns:  repeat(2,1fr);
+    align-items: center;
+    justify-content: end;
+}
+.menu-link-ul-li{
+    padding-right: 3rem;
     cursor: pointer;
 }
 
-.login__navbar{
-    color: black;
-    text-decoration: none;
-    margin: 0 2rem ;
-    transition: all 0.4s ease;
+
+.menu-third-ul li{
+    
+    height: 10rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 
 }
-.login__navbar:hover{
-    font-weight: bold;
-}
-
-.nav__cross,
-.nav__toggle{
+.bar-menu{
     display: none;
+    font-size: 40px;
+    justify-content: start;
+    align-items: center;
+    /* display: none; */
 }
 
-
+.menu-third-ul-li-a{
+       text-decoration: none; 
+       /* color: rgb(21, 20, 20); */
+}
 
 /* BREAKPOINTS */
 
 /* For large devices */
+@media screen and (max-width: 1080px){
+    .main-nav {
+        height: 8rem;
+        grid-template-columns: 1rem 0.5fr 1fr 0.5fr 5rem;
+      }
+}
+
 @media screen and (max-width:992px) {
-    .navbar__ul, .navbar__2{
-        /* display: none; */
+    .menu-link{
+        display: none;
     }
 
-    .nav__toggle{
+    .menu-link-ul{
+        padding-top: 1rem;
+        flex-direction: column;
+    }
+
+    .menu-third-ul{
+        display: flex;
+        /* height: 10rem; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .menu-third-ul li a{
+        text-decoration: none;
+    }
+    
+    .bar-menu{
         /* display: block; */
-    }
-    .navbar__ul{
         display: grid;
-
-        grid-template-columns: repeat(2,1fr);
-        justify-content:center;
-        border: 1ps solid red ;
-
+        /* justify-content: start; */
+        /* grid-column: 5/6; */
+        /* align-items: center; */
+        font-size: 2.5rem;
     }
-  }
+    .main-nav{
+        
+        display: grid;
+        grid-template-rows:  5rem 15rem;
+        grid-template-columns:5rem 0.5fr 2fr 1fr 5rem;
+        z-index: 3;
+       
+    }
+
+    .menu-link-res{
+       
+
+    display: flex;
+    grid-row:2/3 ;
+    grid-column: 2/5;
+    justify-content: space-between;
+    flex-direction: row;
+    box-shadow: 5px 10px 8px #888888;
+    z-index: 2;
+    }
+
+    .menu-link-res li{
+       
+        padding: 1rem 0;
+        list-style: none;
+        padding-left: 20px;
+        
+    }
+    a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .main-logo{
+        
+         /* display: grid; */
+        /* grid-template-rows:  repeat(4,1fr); */
+        display: grid;
+        grid-row: 1/2;
+        grid-column: 1/1;
+        justify-content: center;
+        align-items: center;
+        /* grid-column: 2/4; */
+        /* justify-content: start; */
+        /* align-items: end; */
+
+        /* height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start; */
+       
+    }
+}
   
   /* For medium devices */
   @media screen and (max-width:768px) {
+
+    .menu-link-res{
+        height: 20rem;
+        display: grid;
+
+    }
     
   }
   
@@ -93,3 +198,5 @@
   @media screen and (max-width:350px) {
     
   }
+
+

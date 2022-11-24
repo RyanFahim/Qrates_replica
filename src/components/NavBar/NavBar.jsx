@@ -1,40 +1,65 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navbar.css'
 import logo from '../../assets/qrates-logo.svg'
 
 const NavBar = () => {
-  return (
-    <>
-    <div className="container navbar__container">
+    const [toggle, setToggle] = useState(false);
 
-    <div className="navBar__all-menu">
+    return (
+        <>
+            <nav className="main-nav">
+                <div className="main-logo">
+                    
+                    <img src= {logo} alt="" className="nav-logo" />
+                </div>
 
-        <div className="navbar__1">
-            <img src={logo} alt="" className='navbar__logo'/>
-            
-            <ul className='navbar__ul'>
-                <li className='navbar__li'>Record and Cassettles</li>
-                <li className='navbar__li'>Discover</li>
-                <li className='navbar__li'>For Artist</li>
-                <li className='navbar__li'>Our COmpany</li>
-            </ul>
+                <div className= {
+                    toggle?"menu-link":"menu-link-res"
+                }>
 
-        </div>
+                    <ul className= "menu-link-ul">
 
-        <div className="navbar__2">
-            <a href="#" className="login__navbar">Login</a>
-            <button className="make__own">Make your Own</button>
-            <i className="uil uil-x nav__cross"></i>
-        </div>
-    </div>
+                        <li className="menu-link-ul-li">
+                            <a href="" className="menu-link-ul-li-a">Records and Cassettes</a>
+                        </li>
 
-        <div className="nav__toggle">
-        <i class="uil uil-apps"></i>
-        </div>
+                        <li className="menu-link-ul-li">
+                            <a href="" className="menu-link-ul-li-a">Disvover</a>
+                        </li>
+                        <li className="menu-link-ul-li">
+                            <a href="" className="menu-link-ul-li-a">For Artist</a>
+                        </li>
+                        <li className="menu-link-ul-li">
+                            <a href="" className="menu-link-ul-li-a">Our COmpany</a>
+                        </li>
+                    </ul>
 
-    </div>
-    </>
-  )
+
+                </div>
+
+                <div className="menu-third">
+                    <ul className="menu-third-ul">
+                        <li>
+                            <div href="#" className="menu-third-ul-li-a" >Login</div>
+                            
+                        </li>
+                        <li>
+                            
+                            <button href="#" className="menu-third-ul-li-a">Button</button>
+                        </li>
+                    </ul>
+                    
+                </div>
+                    <div className="bar-menu" onClick={()=>setToggle(!toggle)}>
+                        <a href="#">
+                        <i class="uil uil-bars"></i>
+                        </a>
+                    </div>
+
+                
+            </nav>
+        </>
+    )
 }
 
 export default NavBar
